@@ -59,6 +59,42 @@ Start Header Section
 .influencer-image img{
     margin-left: 10px;
 }
+
+.influencer-blog:hover{
+    background-image:url(/images/main-camera.png);
+    border-radius: 30%;
+    transform: rotate(-20deg);
+    transition:  3s;
+    transform: translate(10%);
+    animation: change 5s infinite ease-in-out;
+    color: #FFFFFF;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(/images/1.jpg);
+    }
+    40%
+    {
+        background-image: url(/images/2.jpg);
+    }
+    60%
+    {
+        background-image: url(/images/3.jpg);
+    }
+    80%
+    {
+        background-image: url(/images/5.jpg);
+    }
+    100%
+    {
+        background-image: url(/images/6.jpg);
+    }
+}
+
+
+
 /* moblie */
 
 @media screen and (max-width: 600px) {
@@ -81,6 +117,9 @@ Start Header Section
         width: 257px;
         height: 257px;
         margin-top: 80px;
+    }
+    .influencer-blog:hover{
+        transform: translate(5%);
     }
     
 }
