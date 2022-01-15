@@ -19,10 +19,8 @@ Start Header Section
     align-items: center;  
 }
 .influencer-blog{
-   /* display: flex;*/
     width: 50%;
     padding: 5%;
-    /*flex-direction: column;*/
     margin-bottom: 16px;
 }
 .influencer-blog h1{
@@ -62,7 +60,7 @@ Start Header Section
     .influencer-info{
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
     }
     .influencer-blog{
         width: 404px;
@@ -88,7 +86,7 @@ Start Header Section
     .influencer-info{
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     .influencer-blog{
         width: 604px;
@@ -106,7 +104,7 @@ Start Header Section
     .influencer-image img{
         width: 457px;
         height: 300px;
-        margin-top: 20px;
+        margin-left: -100px;
     }
     
 }
@@ -130,7 +128,6 @@ h1{
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /*box-shadow: 12px 12px 2px 1px gray;*/
     align-items: center;
     margin: 0 30px;
     grid-row-gap: 30px;
@@ -140,6 +137,7 @@ h1{
     height: 480px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 1px 1px 1px 1px lightgray; */
     border-radius: 5px;
     margin: 0 30px;
     padding: 15px;
@@ -163,10 +161,49 @@ line-height: 0px;
     line-height: 3px;
     color: #787885;
 }
-.filled{
+.filled, .fa-star-half-alt{
     color: #FB8200;
 }
 
+/*mobile*/
+
+@media screen and (max-width: 600px) {
+    .main-container{
+        
+        align-items: center;
+    } 
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .card{
+        width: 329px;
+        height: 476px;
+        align-items: center;
+    }
+}
+
+/*tablet*/
+
+@media screen and (min-width:601px) and (max-width:868px)
+{
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-column-gap: 0px;
+        /*align-items: center;*/
+    }
+    .card{
+        width: 280px;
+        height: 425px;
+        margin: 0 0;
+        justify-content: center;
+    }
+    
+}
 /*------------
 End Main Style
 -----------*/
