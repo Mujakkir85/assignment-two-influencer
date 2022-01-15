@@ -3,10 +3,15 @@
 
 /*Common style*/
 body{
+    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    justify-content: center;
 }
 
+.main-container{
+    margin-bottom: 80px ;
+}
 /*--------
 
 Start Header Section
@@ -82,7 +87,7 @@ Start Header Section
 
 /* tablet */
 
-@media screen and (min-width:601px) and (max-width:868px) {
+@media screen and (min-width:601px) and (max-width:830px) {
     .influencer-info{
         width: 100%;
         flex-direction: column;
@@ -165,21 +170,36 @@ line-height: 0px;
     color: #FB8200;
 }
 
+.seemore a {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E02C6D;
+    padding: 10px 24px;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.seemore a .fa-arrow-right
+{
+    padding-left: 0
+}
 /*mobile*/
 
 @media screen and (max-width: 600px) {
     .main-container{
-        
+        width: 100%;
         align-items: center;
     } 
-    .cards{
-        width: 100%;
+    .cards{   
         display: flex;
         flex-direction: column;
         margin: auto;
     }
     .card{
-        width: 329px;
+        width: 329px; 
         height: 476px;
         align-items: center;
     }
@@ -187,7 +207,7 @@ line-height: 0px;
 
 /*tablet*/
 
-@media screen and (min-width:601px) and (max-width:868px)
+@media screen and (min-width:601px) and (max-width:830px)
 {
     .cards{
         display: grid;
@@ -206,4 +226,52 @@ line-height: 0px;
 }
 /*------------
 End Main Style
+-----------*/
+
+
+/*-------
+start footer
+-----------*/
+footer{
+    text-align: center;
+    color: honeydew;
+    background-color: #0A0826;
+    padding: 10px;
+    margin: 20px 33px 0px 60px;
+    line-height: 10px;
+    border-radius: 5px;
+}
+
+.icons i{
+    padding: 5px;
+    border: solid lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    background-color: rgba(245, 245, 245, 0.267)
+}
+
+
+/* moblie */
+@media screen and (max-width: 600px) {
+footer{
+width: 100%;
+height: 150px; 
+justify-content: center;
+margin: 10px -10px;;   
+}
+}
+/* tablet */
+@media screen and (min-width:601px) and (max-width:830px){
+    footer{
+        width: 98%;
+        height: 200px; 
+        justify-content: center;
+        margin: 10px -10px;;   
+        }
+}
+/*-------
+End footer
 -----------*/
