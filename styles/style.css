@@ -1,0 +1,172 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*Common style*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/*--------
+
+Start Header Section
+
+---------*/
+.influencer-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
+.influencer-blog{
+   /* display: flex;*/
+    width: 50%;
+    padding: 5%;
+    /*flex-direction: column;*/
+    margin-bottom: 16px;
+}
+.influencer-blog h1{
+    font-size: 52px;
+    line-height: 70px;
+}
+.influencer-blog p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.influencer-blog a{
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #F3F1FF;
+    padding: 10px 24px;
+    align-items: center;
+    border-radius: 41px;
+}
+.fa-arrow-right{
+    padding-left: 2%;
+
+}
+.influencer-image{
+    width: 50%;
+    background-image: url("/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    margin-left: 15% ;
+}
+
+.influencer-image img{
+    margin-left: 10px;
+}
+/* moblie */
+
+@media screen and (max-width: 600px) {
+    .influencer-info{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer-blog{
+        width: 404px;
+        height: 222px;
+        text-align: center;
+    }
+    .influencer-blog h1{
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .influencer-image img{
+        width: 257px;
+        height: 257px;
+        margin-top: 80px;
+    }
+    
+}
+
+/* tablet */
+
+@media screen and (min-width:601px) and (max-width:868px) {
+    .influencer-info{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer-blog{
+        width: 604px;
+        height: 344px;
+        text-align: center;
+    }
+    .influencer-blog h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .influencer-blog p{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .influencer-image img{
+        width: 457px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+}
+
+/*--------
+
+End Header Section
+
+---------*/
+
+/*------------
+Start Main Style
+-----------*/
+.main-container{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*box-shadow: 12px 12px 2px 1px gray;*/
+    align-items: center;
+    margin: 0 30px;
+    grid-row-gap: 30px;
+}
+.card{
+    width: 350px;
+    height: 480px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 0 30px;
+    padding: 15px;
+}
+
+.card-img{
+    padding: 5px 3px;
+}
+.card-img img{
+    width: 100%;
+}
+.card h2{
+font-size: 28px;
+line-height: 0px;
+}
+.card h4{
+font-size: 24px;
+line-height: 0px;
+}
+.pragraph{
+    line-height: 3px;
+    color: #787885;
+}
+.filled{
+    color: #FB8200;
+}
+
+/*------------
+End Main Style
+-----------*/
