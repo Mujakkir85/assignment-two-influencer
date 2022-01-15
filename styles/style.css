@@ -62,7 +62,7 @@ Start Header Section
 
 .influencer-blog:hover{
     border-radius: 30%;
-    transform: rotate(-20deg);
+    /* transform: rotate(-20deg); */
     transition:  3s;
     transform: translate(10%);
     animation: change 5s infinite ease-in-out;
@@ -72,23 +72,27 @@ Start Header Section
 @keyframes change{
     0%
     {
-        background-image: url(/images/1.jpg);
+        background-color: #66CCCC;
+        color:#E02C6D;
     }
     40%
     {
-        background-image: url(/images/2.jpg);
+        background-color: #C2EFEF;
     }
     60%
     {
-        background-image: url(/images/3.jpg);
+        background-color: #008B8B;	
+        color: #FFFFFF;	
     }
     80%
     {
-        background-image: url(/images/5.jpg);
+        background-color: #4A777A;
+        color: #FFFFFF;
     }
     100%
     {
-        background-image: url(/images/6.jpg);
+        background-color: #325C74;
+        color: #FFFFFF;
     }
 }
 
